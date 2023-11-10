@@ -1,0 +1,591 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.home-page{
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+#banner {
+    position: relative;
+    background: url("./Assets/banner.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+
+#banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+
+.banner-text {
+    text-align: left;
+    color: #fff;
+    position: absolute;
+    top: 30%; /* Increase the distance from the background picture */
+    left: 10%;
+    transform: translate(0, -50%);
+}
+
+
+.banner-text h1 {
+    font-size: 70px;
+}
+/* Remove the video width and position attributes from the <video> element */
+video {
+    max-width: 40%; /* To make the video responsive to its container */
+}
+
+
+/* Update the positioning of the video container */
+#banner video {
+    position: absolute;
+    top: 55%; /* Adjust the vertical positioning */
+    left: 30%; /* Center the video horizontally */
+    transform: translate(-50%, -50%);
+}
+
+
+
+
+.content {
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    color: #333333;
+    position:absolute;
+    padding-top: 5vh;
+    padding-bottom: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: top;
+    flex-direction: column;
+   
+}
+
+
+.content h2 {
+    font-size: 55px;
+    width: 50vw;
+}
+
+
+.content p {
+    font-size: 20px;
+    margin-top: 20px; /* Increase the space between the paragraphs and the "What is globalization?" text */
+    width: 60vw;
+    margin-bottom: 20px;
+
+
+}
+
+
+* {box-sizing: border-box;}
+
+
+body {
+  margin: 0;
+}
+
+
+.carousel {
+  width: 60vw;
+  height: 60vh;
+  position: relative;
+  padding-top: 30px;
+}
+
+
+.carousel > ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
+.slide {
+  position: absolute;
+  opacity: 0;
+  transition: 200ms opacity ease-in-out;
+  transition-delay: 200ms;
+}
+.slide > img {
+  /* position: absolute; */
+  display: block;
+  width: 60vw;
+  height: 60vh;
+  object-fit: cover;
+  object-position: center;
+}
+
+
+.slide[data-active] {
+  opacity: 1;
+  z-index: 1;
+  transition-delay: 0ms;
+}
+
+
+
+
+.carousel-button {
+  position: absolute;
+  z-index: 2;
+  background: none;
+  border: none;
+  font-size: 4rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgba(255, 255, 255, .5);
+  cursor: pointer;
+  border-radius: .25rem;
+  padding: 0. 5rem;
+  background-color: rgba(0, 0, 0, .1);
+}
+
+
+.carousel-butto:hover,
+.carousel-button:focus {
+  color: #fff;
+  background-color: rgba(0, 0, 0, .2);
+}
+
+
+.carousel-button:focus {
+  outline: 1px solid black;
+}
+
+
+.carousel-button.prev {
+  left: 1rem;
+}
+
+
+.carousel-button.next {
+  right: 1rem;
+}
+
+.content12 {
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  color: #333333;
+  position:absolute;
+  padding-top: 130vh;
+  padding-bottom: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: top;
+  flex-direction: column;
+ 
+}
+
+
+.content12 p {
+    font-size: 20px;
+      margin-top: 20px; /* Increase the space between the paragraphs and the "What is globalization?" text */
+      width: 60vw;
+      margin-bottom: 20px;
+  
+  }
+
+  .content12 .highlight12 {
+    background-color: rgb(255, 232, 56); /* Choose your desired background color */
+  }
+  
+
+.content2 {
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  color: #333333;
+  position:absolute;
+  padding-top: 160vh;
+  padding-bottom: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: top;
+  flex-direction: column;
+ 
+}
+
+.content2 h3 {
+  font-size: 45px;
+  width: 50vw;
+}
+
+#gdpGrowthRateChart {
+  max-width: 80%; /* Adjust the maximum width as needed */
+  margin: 0 auto; /* Center the chart horizontally */
+  display: block; /* Make the chart a block-level element for centering */
+  margin-top: 1255px; /* Add margin space between the image slide and the chart */
+  max-height: 30vh; /* Adjust the maximum height as needed */
+}
+
+.content3 {
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  color: #333333;
+  position:absolute;
+  padding-top: 230vh;
+  padding-bottom: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: top;
+  flex-direction: column;
+ 
+}
+
+.content3 h4 {
+  font-size: 45px;
+  width: 50vw;
+}
+.content3 p {
+  font-size: 20px;
+    margin-top: 10px; /* Increase the space between the paragraphs and the "What is globalization?" text */
+    width: 60vw;
+    margin-bottom: 20px;
+
+}
+
+.content5 {
+  font-size: 30px; /* Adjust the font size as needed */
+  margin-top: 2810px; /* Adjust the top margin as needed */
+  margin-bottom: 20px; /* Adjust the bottom margin as needed */
+  position: absolute;
+  color: #333333;
+  margin-left: 250px;
+}
+
+.content6 {
+  font-size: 21px;
+  margin-top: 70px;
+  margin-bottom: 20px;
+  color: #fcfafa;
+  margin-left: 90px;
+  z-index: 2;
+  background: transparent;
+  text-align: center;
+  justify-content: baseline;
+  min-width: 500px;
+  min-height: 10px; /* Add a unit (e.g., pixels) */
+}
+
+.content7 {
+  font-size: 21px;
+  margin-top: 70px;
+  margin-bottom: 20px;
+  color: #fcfafa;
+  margin-left: 200px;
+  z-index: 2;
+  background: transparent;
+  text-align: center;
+  justify-content: baseline;
+  min-width: 500px;
+  min-height: 10px; /* Add a unit (e.g., pixels) */
+}
+
+
+
+
+
+.content4 {
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  color: #333333;
+  position:absolute;
+  padding-top: 365vh;
+  padding-bottom: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: top;
+  flex-direction: column;
+ 
+}
+
+.content4 h1 {
+  font-size: 45px;
+  width: 50vw;}
+
+.content4 p {
+    font-size: 20px;
+      margin-top: 20px; /* Increase the space between the paragraphs and the "What is globalization?" text */
+      width: 60vw;
+      margin-bottom: 20px;
+  
+  }
+
+  #myChart2 {
+    max-width: 30%; /* Adjust the maximum width as needed */
+    margin: 0 auto; /* Center the chart horizontally */
+    display: block; /* Make the chart a block-level element for centering */
+    margin-top: 1400px; /* Add margin space between the image slide and the chart */
+    margin-left: 100px;
+    max-height: 80vh; /* Adjust the maximum height as needed */
+    position: absolute;
+  }
+
+  #gdpDistributionChart {
+   
+    margin: 0; /* Remove default margin */
+    margin-top: 230px; /* Adjust the top margin as needed */
+    margin-right: 10px; /* Add some right margin for spacing */
+    margin-left: 80px;
+    position: absolute;
+  }
+  #workforceDistributionChart {
+   
+    margin: 0; /* Remove default margin */
+    margin-top: 230px; /* Adjust the top margin as needed */
+    margin-right: 0px; /* Add some right margin for spacing */
+    margin-left: 810px;
+    position: absolute;
+    padding-right: 10px;
+  }
+
+.inequalityvid {
+  position: absolute;
+  top: 507vh;
+  right: 10%;
+
+}
+.graphcontainer {
+  background-color: black;
+  height: 100vh;
+  position: absolute;
+  top: 565vh;
+  width: 100%;
+  display: flex;
+  z-index: 1; /* Add this line */
+}
+
+/* .graphcontainer h2{
+  font-size: 25px;
+}
+.graphcontainer h3{
+  font-size: 30px;
+} */
+
+.content8 {
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  color: #333333;
+  position: absolute;
+  padding-top: 265vh;
+  padding-bottom: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: top;
+  flex-direction: column;
+  margin-left: 25vw;
+ 
+}
+
+.content8 {
+  font-size: 15px;
+  width: 50vw;
+}
+
+
+
+#exportChart,
+#importChart {
+  margin-top: 65vh;
+  max-width: 400px;
+  max-height: 300px; /* Adjust the maximum height as needed */
+}
+
+.content13 {
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  color: #333333;
+  position:absolute;
+  padding-top: 325vh;
+  padding-bottom: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: top;
+  flex-direction: column;
+ 
+}
+
+.content13 h1 {
+  font-size: 30px;
+  width: 50vw;
+  text-align: center;
+  margin-left: 5vw;
+}
+.content13 p {
+  font-size: 20px;
+    margin-top: 10px; /* Increase the space between the paragraphs and the "What is globalization?" text */
+    width: 60vw;
+    margin-bottom: 20px;
+
+}
+
+.content13 .highlight3 {
+  background-color: rgb(255, 232, 56); /* Choose your desired background color */
+}
+
+
+.content9 {
+  text-align: center;
+  color: #333333;
+  position: absolute;
+  padding-top: 570vh;
+  padding-bottom: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: top;
+  flex-direction: column;
+  margin-left: 20vw;
+  width: 60vw;
+}
+
+.content9 .highlight {
+  background-color: rgb(255, 232, 56); /* Choose your desired background color */
+}
+
+.content9 p {
+  font-size: 21px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.chart-container {
+  width: 80vw; /* Adjust the width as needed */
+  margin: 0 auto; /* Center the container horizontally */
+  display: flex;
+  justify-content: space-around; /* Adjust the alignment as needed */
+  position: relative;
+  margin-top: 1vh; /* Adjust the top margin as needed */
+}
+
+
+
+
+
+.content10 {
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  color: #333333;
+  position:absolute;
+  padding-top: 612vh;
+  padding-bottom: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: top;
+  flex-direction: column;
+ 
+}
+
+.content10 h1 {
+  font-size: 45px;
+  width: 50vw;
+}
+.content10 p {
+  font-size: 20px;
+    margin-top: 20px; /* Increase the space between the paragraphs and the "What is globalization?" text */
+    width: 60vw;
+    margin-bottom: 20px;
+
+}
+
+.content11 {
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  color: #333333;
+  position:absolute;
+  padding-top: 710vh;
+  padding-bottom: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: top;
+  flex-direction: column;
+ 
+}
+
+.content11 p{
+  font-size: 20px;
+    margin-top: 80px; /* Increase the space between the paragraphs and the "What is globalization?" text */
+    width: 60vw;
+    margin-bottom: 20px;
+}
+
+#wageChart{
+  margin-top: 350vh;
+  max-width: 400px;
+  max-height: 300px; /* Adjust the maximum height as needed */
+  margin-left: 55vh;
+}
+
+.conclusion {
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  color: rgb(255, 232, 56);
+  position:absolute;
+  padding-top: 760vh;
+  padding-bottom: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: top;
+  flex-direction: column;
+  
+ 
+}
+
+.conclusion h1 {
+  font-size: 60px;
+  width: 50vw;
+  margin-left: 24vw;
+}
+.conclusion p {
+  font-size: 20px;
+    margin-top: 20px; /* Increase the space between the paragraphs and the "What is globalization?" text */
+    width: 60vw;
+    margin-bottom: 20px;
+    margin-left: 20vw;
+
+}
+
+.conclusion .highlight4 {
+  background-color: black; /* Choose your desired background color */
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
